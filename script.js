@@ -38,7 +38,8 @@ function toggleClass(event) {
 }
 
 function deleteParent(event) {
-	event.target.parentNode.parentNode.removeChild(event.target.parentNode);
+	// event.target.parentNode.parentNode.removeChild(event.target.parentNode);
+	event.target.parentNode.remove();
 }
 
 for (var i = 0; i < li.length; i++) {
